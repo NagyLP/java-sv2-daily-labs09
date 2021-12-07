@@ -2,13 +2,13 @@ package day01;
 
 public class Person {
 
-    private String ticket;
+    private Ticket ticket;
 
-    public Person(String ticket) {
+    public Person(Ticket ticket) {
         this.ticket = ticket;
     }
 
-    public String getTicket() {
+    public Ticket getTicket() {
         return ticket;
     }
 }

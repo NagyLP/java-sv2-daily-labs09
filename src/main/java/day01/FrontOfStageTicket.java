@@ -14,10 +14,15 @@ public class FrontOfStageTicket extends Ticket {
 
     @Override
     public LocalTime entryTime() {
-        return super.entryTime().minusHours(-1);
+        return super.entryTime().minusHours(1);
     }
 
     public String getExtraCode() {
         return extraCode;
+    }
+
+    @Override
+    public String toString() {
+        return "Első sorba szóló jegy.";
     }
 }
