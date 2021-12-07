@@ -10,10 +10,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class StringListTest {
 
-    List<String> stringList = new ArrayList<>(Arrays.asList("Béla", "sdfa", "Sokaság"));
+    List<String> actualTest = new ArrayList<>(Arrays.asList("Béla", "sdfa", "12", "és", "Sokaság"));
+    List<String> exeptedTest = new ArrayList<>(Arrays.asList("12", "és"));
 
     @Test
     void shortestWord() {
-        assertEquals("sdfa", new StringList().shortestWord(stringList));
+        assertEquals( exeptedTest,new StringList().shortestWord(actualTest));
     }
 }
