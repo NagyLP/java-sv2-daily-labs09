@@ -1,0 +1,1 @@
+A cím szinte megszólal, mi kellene még ide most.
